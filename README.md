@@ -9,8 +9,10 @@
 6. [Product Specification](#Product-Specification)
    - User Stories
    - Screen Archetypes
-   - Screen Navigation 
-7. [Code Struture](#Code-Structure)
+   - Screen Navigation
+7. [Schema](#Schema)
+   - Models
+8. [Code Struture](#Code-Structure)
     - MainActivity.java
     - AnswerButtonListner.java
     - MainController.java
@@ -22,7 +24,7 @@
     - colors.xml
     - strings.xml
     - themes.xml
-8. [Video Walkthrough](#Video-Walkthrough)
+9. [Video Walkthrough](#Video-Walkthrough)
 
 ## Overview
 The MultiQuestionQuiz App is an Android application that presents a series of true/false questions to the user. The user can answer the questions and navigate through them using the provided buttons. The app provides immediate feedback on whether the selected answer is correct or incorrect.
@@ -98,6 +100,33 @@ Proceeding to Next Question
 - Action: The user clicks the "Next" button.
 - Destination: The Question Screen updates to display the next question in the sequence.
 
+## Schema
+### Models
+
+Question
+| Property	| Type	| Description |
+| --- | --- | --- |
+| textResid | Integer | Resource ID of the question text |
+| answer | Boolean | True if th answer is true, false otherwise |
+
+QuestionBank
+| Property	| Type	| Description |
+| --- | --- | --- |
+| questions | Array | List of 'Question' objects |
+| questionIndex | Integer | Index of the current question |
+
+MainController
+| Property	| Type	| Description |
+| --- | --- | --- |
+| view | View | The 'View' associated with the controller |
+| questionBank | QuestionBank | The 'QuestionBank' used in the controller |
+| correctAnswer | Boolean | True if the correct answer is correct |
+
+View
+| Property	| Type	| Description |
+| --- | --- | --- |
+| mainActivity | MainActivity | The main activity of the app |
+| questionTextView | TextView | The TextView displaying the question |
     
 ## Code Structure
 MainActivity.java
