@@ -448,7 +448,7 @@ themes.xml
 ```
 ## Image Visuals
 
-<img src="Main-screen(MultiQuestion-Quiz).png" width=200>
+<img src="Main-screen(MultiQuestion-Quiz).png" width=200> | <img src="Correct-Answer-NextQuestion(MultiQuestion-Quiz).png" width=200>
 
 
 ## Video Walkthrough
