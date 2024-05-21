@@ -25,7 +25,7 @@
     - strings.xml
     - themes.xml
 9. [Image Visuals](#Image-Visuals)
-10. [Video Walkthrough](#Video-Walkthrough)
+
 
 ## Overview
 The MultiQuestionQuiz App is an Android application that presents a series of true/false questions to the user. The user can answer the questions and navigate through them using the provided buttons. The app provides immediate feedback on whether the selected answer is correct or incorrect.
@@ -449,6 +449,3 @@ themes.xml
 ## Image Visuals
 
 <img src="Main-screen(MultiQuestion-Quiz).png" width=200> | <img src="Correct-Answer-NextQuestion(MultiQuestion-Quiz).png" width=200>
-
-
-## Video Walkthrough
